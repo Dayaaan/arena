@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0 auto;
+	font-size: 2.5rem;
+	background-image: url("../img/background8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px #ff0000;
+}
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+header {
+	text-align: center;
+	padding-top: 10rem;
+	margin-bottom: 10rem;
+}
+header a {
+	text-decoration: none;
+	color: #6e0200;
+	font-weight: bold;
+	font-size: 2rem;
+}
+a:hover {
+	color: white;
+}
+.selected a {
+	color: #FFFFFF !important;
+	text-decoration: underline;
+}
+.selecteds {
+	border : 5px solid #6e0200;
+	border-radius: 10px;
+}
+h1 {
+	width: 1100px;
+	text-align: center;
+	border-bottom: 2px solid #6e0200;
+	margin: 0 auto;
+}
+form {
+	width: 465px;
+	margin-left: 250px;
+}
+legend {
+	color: #6e0200;
+	font-weight: bold;
+}
+.hero {
+	display: inline-block;
+}
+
+img {
+	width: 55%
+}
+.heros {
+	display: flex;
+}
+.hero {
+	color: 	#191970;
+	font-size: 2rem;
+	text-align: center;
+}
+.linka {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+	color: red;
+	border: 1px solid #6e0200;
+	display: inline;
+}
+.mainListHero {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.divHero {
+	width: 25%;
+}

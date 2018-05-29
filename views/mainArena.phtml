@@ -1,0 +1,36 @@
+<h1>Combat des Héros</h1>
+
+<script type="text/xtemplate" id="template-card-hero">
+    <li class="card-hero" data-id="{{ ID }}">
+        <img src="{{ avatarUrl }}">
+        <h3>{{ name }}</h3>
+        <table>
+            <tr>
+                <td>Point de vie : </td>
+                <td>{{ hp }}</td>
+            </tr>
+            <tr>
+                <td>Armure : </td>
+                <td>{{ armor }}</td>
+            </tr>
+            <tr>
+                <td>Dommage : </td>
+                <td>{{ damage.min }} - {{ damage.max }}</td>
+            </tr>
+        <table>
+    </li>
+ </script>
+
+        <h2>Selectionner deux héros pour combattre</h2>
+
+        <ul id="arena">
+        </ul>
+
+        <div class="button">
+        	<button>Combat</button>
+        </div>
+
+        <p class="para1"></p>
+        <p class="para2"></p>
+        <p class="para3"></p>
+ <script src="js/script.js"></script>

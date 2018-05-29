@@ -1,0 +1,26 @@
+<div class="container form-group">
+	<form method="POST" action="../public/processCreateHero.php">
+		<fieldset> 
+			<legend>Creation du héro</legend>
+			<label for="name">Nom</label>
+			<input class="form-control" type="text" name="name" placeholder="Nom du héro"/><br>
+			<label for="hp">Point de vie</label>
+			<input class="form-control" type="text" name="hp" placeholder="Point de vie du héro"><br>
+			<label for="armor">Armure</label>
+			<input type="number" class="form-control" name="armor" placeholder="100"><br>
+			<label for="weapon_id">Arme</label>
+			<select name="weapon_id" class="form-control">
+				<option value="1">Epée</option>
+				<option value="2">Lance patate</option>
+				<option value="3">Griffe</option>
+				<option value="4">Lance flamme</option>
+				<option value="5">Fusil</option>
+				<option value="6">Bouclier</option>
+			</select>
+			<label for="avatar">Avatar : </label>
+			<input class="form-control" type="text" name="avatar" placeholder="Url de l'avatar"><br><br>
+			<button class="btn btn-primary" type="submit" name="submit">Envoyer</buttton>
+
+		</fieldset>
+	</form>
+</div>

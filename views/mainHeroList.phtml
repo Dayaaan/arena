@@ -1,0 +1,13 @@
+<h1>Selectionnez deux héros</h1>
+<div class="mainListHero">
+	<?php foreach ($heroList as $hero) : ?>
+		<div class="divHero">
+			<h3><?= $hero["name"] ?></h3>
+			<p>HP : <?= $hero["hp"] ?></p>
+			<p>Armure : <?= $hero["armor"] ?></p>
+			<p>Weapon : <?= $hero["weapon_name"] ?></p>
+			<img src="<?= $hero["avatar"] ?>" alt="img"><br>
+			<a style="color:white;" href="../public/deleteHero.php?index=<?= $hero['id'] ?>">Supprimer</a>
+		</div>
+	<?php endforeach ?>
+</div>
