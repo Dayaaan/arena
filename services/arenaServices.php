@@ -14,9 +14,9 @@ function createHero($name,$hp,$armor,$weapon_id,$avatar) {
 
 function getHeroList() {
 	$bdd = getConnection();
-	$statement = $bdd->prepare('SELECT id,hero.name,weapon.name AS weapon_name,armor,hp,avatar,image  FROM hero JOIN weapon ON weapon.weapon_id = hero.weapon_id');
+	$statement = $bdd->prepare('SELECT id,hero.name,weapon.name AS weapon_name,armor,hp,avatar,image,weapon.damage_min, weapon.damage_max  FROM hero JOIN weapon ON weapon.weapon_id = hero.weapon_id');
 	$statement->execute();
-	$heroList = $statement->fetchAll();
+	$heroList = $statement->fetchAll(PDO::FETCH_ASSOC);
 	return $heroList;
 }
 
